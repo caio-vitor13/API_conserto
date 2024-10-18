@@ -19,16 +19,16 @@ public class Conserto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String horaEntrada;
-    private String horaSaida;
+    private String dataEntrada;
+    private String dataSaida;
     @Embedded
     private Mecanico mecanico;
     @Embedded
     private Veiculo veiculo;
 
     public Conserto(ConsertoDTO dto){
-        this.horaEntrada = dto.horaEntrada();
-        this.horaSaida = dto.horaSaida();
+        this.dataEntrada = dto.dataEntrada();
+        this.dataSaida = dto.dataSaida();
         this.mecanico = new Mecanico(dto.mecanico());
         this.veiculo = new Veiculo(dto.veiculo());
 

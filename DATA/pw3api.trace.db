@@ -1,0 +1,6 @@
+2024-10-17 19:40:56.149555-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]* from consertos"; expected "identifier"; SQL statement:
+delete * from consertos [42001-224]
+2024-10-17 19:41:07.319248-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]remove * from consertos"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REFRESH"; SQL statement:
+remove * from consertos [42001-224]
