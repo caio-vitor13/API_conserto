@@ -17,4 +17,14 @@ public class Mecanico {
         this.nome = dto.nome();
         this.anosExperiencia = dto.anosExperiencia();
     }
+
+    public void atualizarInformacoes(MecanicoDTO dados) {
+        if (dados.nome() != null) {
+            this.nome = dados.nome();
+        }
+        if (dados.anosExperiencia() != null) {
+            this.anosExperiencia = dados.anosExperiencia();
+        }
+
+    }
 }

@@ -1,6 +1,7 @@
 package API_conserto.conserto;
 
 public record ListagemConsertoDTO(
+        Long id,
         String dataEntrada,
         String dataSaida,
         String nome,
@@ -8,7 +9,7 @@ public record ListagemConsertoDTO(
         String modelo)
         {
             public ListagemConsertoDTO(Conserto conserto){
-                this(conserto.getDataEntrada(), conserto.getDataSaida(),
+                this(conserto.getId(), conserto.getDataEntrada(), conserto.getDataSaida(),
                         conserto.getMecanico().getNome(), conserto.getVeiculo().getMarca(),
                         conserto.getVeiculo().getModelo());
 
